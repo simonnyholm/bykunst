@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bykunst - Aalborg</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__logoDiv">
+            <a href="index.html">
+                <img class="header__logoImg" src="img/logo-kun-text.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <label for="navigation__check" class="navigation__label">
+                <img class="navigation__img" src="img/burger-menu.png" alt="Menu">
+            </label>
+            <input type="checkbox" name="navigation__check" id="navigation__check" class="navigation__check">
+            <ul class="navigation__list">
+
+                <li class="navigation__item">
+                    <a class="navigation__a" href="aalborg.html">Aalborg</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__a" href="koebenhavn.html">København</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__a" href="contribute.html">Mangler der et værk?</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__a" href="about.html">Om Bykunst</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainContent">
+        <div class="column1">
+            <section class="introSection sectionLayout">
+                <h1 class="introSection__h1 sectionH1">Aalborg</h1>
+                <p class="introSection__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    id,
+                    molestias sint, aliquam sed fugit
+                    consectetur laborum doloribus officia odio nesciunt sit rerum excepturi ullam reiciendis. Dolorem
+                    rerum
+                    reprehenderit id.</p>
+                <p class="introSection__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    id,
+                    molestias sint, aliquam sed fugit
+                    consectetur laborum.</p>
+            </section>
+            <div class="artExampleDiv sectionLayout artExample1">
+                <a class="artExampleDiv__a" href="cimbrertyren.html"><img class="artExampleDiv__img artExample1"
+                        src="img/art-aalborg-cimbrertyren-1.jpg" alt="Cimbrertyren"></a>
+            </div>
+
+            <section class="indepthSection sectionLayout">
+                <section class="sectionH1">Vejret i Aalborg lige nu</section>
+                <p class="sectionP">
+                Der er lige nu <span class="weatherDegrees"></span> og <span class="weatherDescription"></span> i Aalborg.</p>
+            </section>
+
+        </div>
+
+        <div class="column2">
+            <div class="artExampleDiv sectionLayout artExample1">
+                <a class="artExampleDiv__a" href="bjoernemanden.html"><img class="artExampleDiv__img"
+                        src="img/art-aalborg-bjoernemanden-2.jpg" alt="Bjørnemanden"></a>
+            </div>
+
+            <div class="artExampleDiv sectionLayout artExample1">
+                <a class="artExampleDiv__a" href="den-danske-kvindeskikkelse-freja.html"><img class="artExampleDiv__img"
+                        src="img/art-aalborg-den-danske-kvindeskikkelse-freja-1.jpg" alt="Den danske kvindeskikkelse Freja"></a>
+            </div>
+        </div>
+
+
+
+
+        <div class="column3">
+            <div class="artExampleDiv sectionLayout artExample1">
+                <a class="artExampleDiv__a" href="gaasepigen.html"><img class="artExampleDiv__img"
+                        src="img/art-aalborg-gaasepigen-1.jpg" alt="Gåsepigen"></a>
+            </div>
+
+            <section class="contributeSection sectionLayout">
+                <h1 class="contributeSection__h1 sectionH1">Mangler der et værk?</h1>
+                <p class="contributeSection__p sectionP">Kender du et interessant værk i din by, eller har du set et på
+                    din
+                    vej gennem landet, som vi bør anmelde? <br> Så giv os et praj!</p>
+                <a class="contributeSection__a sectionA" href="contribute.html">
+                    <div class="contributeSection__div sectionBtnDiv"> Giv os et kunst-praj</div>
+                </a>
+            </section>
+
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <section class="footer__section contact">
+            <p class="footer__p email">Vil du vide mere, så kontakt <a class="footer__email"
+                    href="mailto:simonnyholm@hotmail.com">simonnyholm@hotmail.com</a></p>
+        </section>
+
+        <section class="footer__section soMe">
+            <a href="#">
+                <div class="footer__soMe instagram">
+                    <img class="footer__img instagramImg" src="img/instagram.png" alt="Bykunst på instagram">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__soMe pinterest">
+                    <img class="footer__img pinterestImg" src="img/pinterest.png" alt="Bykunst på Pinterest">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__soMe twitter">
+                    <img class="footer__img twitterImg" src="img/twitter.png" alt="Bykunst på Twitter">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__soMe youtube"><img class="footer__img youtubeImg" src="img/youtube.png" alt="Bykunst på Youtube">
+                </div>
+            </a>
+
+
+        </section>
+
+    </footer>
+
+    <script src="js/modules/weather.js"></script>
+    <script>getWeatherByCityName('Aalborg')</script>
+</body>
+
+</html>

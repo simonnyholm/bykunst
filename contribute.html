@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Rubik:wght@900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bykunst - Giv et praj</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__logoDiv">
+            <a href="index.html">
+                <img class="header__logoImg" src="img/logo-kun-text.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <label for="navigation__check" class="navigation__label">
+                <img class="navigation__img" src="img/burger-menu.png" alt="Menu">
+            </label>
+            <input type="checkbox" name="navigation__check" id="navigation__check" class="navigation__check">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__a" href="aalborg.html">Aalborg</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__a" href="koebenhavn.html">København</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__a" href="contribute.html">Mangler der et værk?</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__a" href="about.html">Om Bykunst</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainContent">
+        <div class="column1">
+            <section class="introSection sectionLayout">
+                <h1 class="introSection__h1 sectionH1">Gør os opmærksom på bykunsten</h1>
+                <p class="introSection__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    id,
+                    molestias sint, aliquam sed fugit
+                    consectetur laborum doloribus officia odio nesciunt sit rerum excepturi ullam reiciendis. Dolorem
+                    rerum
+                    reprehenderit id.</p>
+                <p class="introSection__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    id,
+                    molestias sint, aliquam sed fugit
+                    consectetur laborum.</p>
+            </section>
+            <section class="city sectionLayout">
+                <h1 class="city__h1 sectionH1">Hvor gemmer kunsten sig?</h1>
+                <p class="city__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non,
+                    aliquid temporibus dicta exercitationem fuga fugit placeat ullam eum soluta earum nam repudiandae,
+                    similique ratione minima! Expedita placeat praesentium nemo?</p>
+
+
+
+
+            </section>
+        </div>
+
+        <div class="column2">
+            <div class="artExampleDiv sectionLayout artExample1">
+                <a class="artExampleDiv__a" href="#"><img class="artExampleDiv__img artExample1"
+                        src="img/art-aalborg-cimbrertyren-1.jpg" alt=""></a>
+            </div>
+            <section class="indepthSection sectionLayout">
+                <h1 class="indepthSection__h1 sectionH1">Sådan giver du et praj!</h1>
+                <p class="indepthSection__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur
+                    id,
+                    molestias sint, aliquam sed fugit
+                    consectetur laborum doloribus officia odio nesciunt sit rerum excepturi ullam reiciendis. Dolorem
+                    rerum
+                    reprehenderit id.</p>
+                <p class="indepthSection__p sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aspernatur
+                    id,
+                    molestias sint, aliquam sed fugit
+                    consectetur laborum.</p>
+                <p class="indepthSection__p sectionP">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Veritatis ullam soluta totam voluptas nostrum quia fuga, reiciendis, rem, tempore ratione maxime
+                    explicabo! Dolorem officia in neque fugit, nemo magnam sequi!.</p>
+            </section>
+
+
+        </div>
+
+
+
+
+        <div class="column3">
+
+            <form id="contributionForm">
+                <section class="contributeSection sectionLayout">
+                    <h1 class="sectionH1">Fakta om værket</h1>
+                    <label class="contributeSection__label" for="artTitleInput">Værkets titel (hvis du kender
+                        det):</label> <br>
+                    <input type="text" name="" id="artTitleInput"> <br>
+                    <label class="contributeSection__label" for="artistNameInput">Kunstnerens navn (hvis du kender
+                        det):</label> <br>
+                    <input type="text" name="" id="artistNameInput"> <br>
+                    <label class="contributeSection__label" for="yearOfCreationInput">År for opførelse:</label> <br>
+                    <input id="yearOfCreationInput" type="number" min="1000" max="2099" step="1" value="" /> <br>
+                    <label class="contributeSection__label" for="artAddressInput">Værkets adresse (eller nærmeste
+                        adresse):</label> <br>
+                    <input type="text" name="" id="artAddressInput"> <br>
+                    <div class="contributeSection__zipCity">
+                        <div class="contributeSection__zip">
+                            <label class="contributeSection__label" for="zipCodeInput">Postnummer:</label> <br>
+                            <input type="text" name="" id="zipCodeInput">
+                        </div>
+                        <div class="contributeSection__city">
+                            <label class="contributeSection__label" for="cityInput">By:</label> <br>
+                            <input type="text" name="" id="cityInput">
+                        </div>
+                    </div>
+
+
+
+
+                </section>
+
+                <section class="contributeSection sectionLayout">
+                    <h1 class="sectionH1">Motivation</h1>
+                    <label class="contributeSection__label" for="motivationInput">Hvorfor er værket interessant?</label>
+                    <br>
+                    <textarea name="" id="motivationInput" cols="30" rows="20"></textarea>
+                </section>
+
+
+                <section class="contributeSection sectionLayout altPaddingBottom">
+                    <h1 class="sectionH1">Lidt om dig</h1>
+                    <label class="contributeSection__label" for="userNameInput">Dit navn:</label> <br>
+                    <input type="text" name="" id="userNameInput"> <br>
+                    <label class="contributeSection__label" for="userEmailInput">Din e-mail:</label> <br>
+                    <input type="email" name="" id="userEmailInput"> <br>
+                    <label class="contributeSection__label" for="userOccupationInput">Beskæftigelse:</label> <br>
+                    <input type="text" name="" id="userOccupationInput"> <br>
+                    <div class="contributeSection__submitErrorDiv">
+
+                        <input type="submit" value="Indsend praj" id="submitInput">
+
+
+                        <ul class="contributeSection__errorMessageUl">
+
+
+
+                        </ul>
+
+                        
+
+                    </div>
+
+
+                </section>
+            </form>
+
+
+            <section class="scoreboardSection sectionLayout">
+                <h1 class="scoreboardSection__h1 sectionH1">Dit bidrag</h1>
+                <p class="scoreboardSection__p sectionP contributionScore">Husk at give et praj!</p>
+
+                <p class="sectionP">Når du har givet os 5 praj, giver vi en lækker bog om bykunst.</p>
+                <p class="sectionP price"></p>
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+    <footer class="footer">
+        <section class="footer__section contact">
+            <p class="footer__p email">Vil du vide mere, så kontakt <a class="footer__email"
+                    href="mailto:simonnyholm@hotmail.com">simonnyholm@hotmail.com</a></p>
+        </section>
+
+        <section class="footer__section soMe">
+            <a href="#">
+                <div class="footer__soMe instagram">
+                    <img class="footer__img instagramImg" src="img/instagram.png" alt="Bykunst på instagram">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__soMe pinterest">
+                    <img class="footer__img pinterestImg" src="img/pinterest.png" alt="Bykunst på Pinterest">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__soMe twitter">
+                    <img class="footer__img twitterImg" src="img/twitter.png" alt="Bykunst på Twitter">
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer__soMe youtube"><img class="footer__img youtubeImg" src="img/youtube.png"
+                        alt="Bykunst på Youtube">
+                </div>
+            </a>
+
+
+        </section>
+
+    </footer>
+
+    <script src="js/modules/formValidation.js"></script>
+</body>
+
+</html>
